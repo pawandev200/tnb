@@ -1,0 +1,64 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgb(0, 0, 0)
+    position: relative;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .links li a:hover {
+    background-color: #555;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+  }
+  
+  /* Responsive Navbar for Small Screens */
+  @media (max-width: 768px) {
+    .links {
+      display: none;
+      flex-direction: column;
+      background-color: #ffffff;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 20px;
+    }
+  
+    .show_navbar .links {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger on small screens */
+    }
+  }
+  
